@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tealive - Home</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: azure;
+        }
+        header {
+            background-color: rgb(216, 175, 255);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+        }
+        td, th {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(216, 175, 255);
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/tealive-logo.png" alt="logo" width="10%">
+        <nav>
+            <a href="index.html ">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Tealive Malaysia!</h1>
+        <p style="text-align: center;">We serve various type of drinks icluding secret liquid</p>
+        <table border="1">
+            <tr><th>No</th><th>Category</th><th>Description</th></tr>
+            <tr><td>1</td><td>Signature Milk Tea</td><td>Classic brown sugar or pearl milk tea</td></tr>
+            <tr><td>2</td><td>Fruit Tea</td><td>Refreshing fruit-infused tea</td></tr>
+            <tr><td>3</td><td>Smoothies</td><td>Creamy ice-blended drinks</td></tr>
+            <tr><td>4</td><td>Coffee</td><td>Specialty coffee-based drinks</td></tr>
+            <tr><td>5</td><td>Sparkling Series</td><td>Fizzy and fun sparkling beverages</td></tr>
+        </table>
+    </main>
+    <footer>
+        <p>Follow Us: </p>
+        <a href="https://www.facebook.com/tealiveasia"><img src="images/Facebook.png" alt="Facebook" width="3%"></a>
+        <a href="https://www.instagram.com/tealiveasia"><img src="images/ig.png" alt="Instagram" width="3%"></a>
+        <a href="https://www.tiktok.com/@tealiveasia"><img src="images/tiktok.png" alt="Tiktok" width="3%"></a>
+    </footer>
+    
+</body>
+</html>
