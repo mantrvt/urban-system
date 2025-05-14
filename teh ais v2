@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tealive - Menu</title>
+    <style>
+    body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: azure;
+        }
+        header {
+            background-color: rgb(216, 175, 255);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(216, 175, 255);
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .center {
+            text-align: center;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/tealive-logo.png" alt="logo" width="10%">
+        <nav>
+            <a href="index.html ">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="center">
+        <h1>Choose your Drinks!</h1>
+        <p>Select various type of our spcial drinks!</p>
+        <img src="images/1.jpg" alt="Milk Tea" width="15%"><br>
+        <input type="checkbox" name="drink" value="Milk Tea">Milk Tea <br><br>
+        <img src="images/2.jpg" alt="Smoothies" width="15%"><br>
+        <input type="checkbox" name="drink" value="Smoothies">Smoothies <br><br>
+        <img src="images/3.jpg" alt="Fruit Tea" width="15%"><br>
+        <input type="checkbox" name="drink" value="Fruit Tea">Fruit Tea <br><br>
+        <img src="images/4.jpg" alt="Coffee" width="15%"><br>
+        <input type="checkbox" name="drink" value="Coffee">Coffee <br><br>
+        <img src="images/5.jpg" alt="Sparkling" width="15%"><br>
+        <input type="checkbox" name="drink" value="Sparkling">Sparkling <br><br><br>
+        <button type="button" onclick="countSelection()">Submit My Preferences</button>
+        </div>
+    </main>
+    <footer>
+        <p>Follow Us: </p>
+        <a href="https://www.facebook.com/tealiveasia"><img src="images/Facebook.png" alt="Facebook" width="3%"></a>
+        <a href="https://www.instagram.com/tealiveasia"><img src="images/ig.png" alt="Instagram" width="3%"></a>
+        <a href="https://www.tiktok.com/@tealiveasia"><img src="images/tiktok.png" alt="Tiktok" width="3%"></a>
+    </footer>
+    <script>
+        function countSelection() {
+            checkbox = document.querySelectorAll('input[name="drink"]:checked');
+            alert("You choose " + checkbox.length + " drivka");
+        }
+    </script>
+</body>
+</html>
