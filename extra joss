@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tealive Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>Tealive Favourites</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <img src="images/brown_sugar.jpg" alt="Brown Sugar Milk Tea" width="50%">
+                <h2>Signature Brown Sugar Milk Tea</h2>
+                <p>Bestseller with chewy pearls</p>
+                <a href="#" data-role="button">Order Now</a>
+            </li>
+            <li>
+                <img src="images/mango_tea.jpg" alt="Mango Fruit Tea" width="50%">
+                <h2>Mango Fruit Tea</h2>
+                <p>Sweet and tropical refreshment</p>
+                <a href="#" data-role="button">Order Now</a>
+            </li>
+            <li>
+                <img src="images/matcha_latte.jpg" alt="Matcha Latte" width="50%">
+                <h2>Matcha Latte</h2>
+                <p>Earthy matcha with fresh milk</p>
+                <a href="#" data-role="button">Order Now</a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer">
+        <h4>© Tealive Malaysia</h4>
+    </div>
+
+</div>
+
+</body>
+</html>
