@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tealive - Contact</title>
+    <style>
+    body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: azure;
+        }
+        header {
+            background-color: rgb(216, 175, 255);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(216, 175, 255);
+            padding: 10px 20px;
+            text-align: center;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/tealive-logo.png" alt="logo" width="10%">
+        <nav>
+            <a href="index.html ">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us: </h1>
+        <p>Keep in touch with Us: </p>
+        <form>
+            <label>Name: </label>
+            <input type="text" id="name"><br><br>
+
+            <label>Email: </label>
+            <input type="text" id="email"><br><br>
+
+            <label>Message: </label>
+            <textarea id="message"></textarea><br><br><br>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="reset" onclick="confirmReset()">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <p>Follow Us: </p>
+        <a href="https://www.facebook.com/tealiveasia"><img src="images/Facebook.png" alt="Facebook" width="3%"></a>
+        <a href="https://www.instagram.com/tealiveasia"><img src="images/ig.png" alt="Instagram" width="3%"></a>
+        <a href="https://www.tiktok.com/@tealiveasia"><img src="images/tiktok.png" alt="Tiktok" width="3%"></a>
+    </footer>
+
+    <script>
+        function confirmReset() {
+            return confirm("Are you sure you want to reset?");
+        }
+
+        function submitForm() {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if(!name || !email || !message) {
+                alert("Please fill all field");
+                return;
+            }
+            if(!email.includes("@")) {
+                alert("please enter valid email address");
+                return;
+            }
+            alert("Submit successfully");
+        }
+    </script>
+    
+</body>
+</html>
